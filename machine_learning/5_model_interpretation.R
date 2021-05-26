@@ -7,7 +7,7 @@ library(xlsx)
 
 set.seed(1234)
 
-setwd("C:\\Users\\nrf1\\Desktop\\github_repos\\Predicting_TB_cluster_growth\\machine_learning\\results")
+setwd("results")
 load("modelRF_classification.rda")
 
 ##set up training data
