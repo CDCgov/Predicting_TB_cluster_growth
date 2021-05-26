@@ -1,6 +1,15 @@
 # Predicting_TB_cluster_growth
 This repository was created to provide the code for using national tuberculosis surveillance data and machine learning techniques to predict excess growth in genotyped TB clusters.
 
+The negative_binomial_hurdle_model folder contains the code to run the negative binomial hurdle model (Allclus_NBhurdle_multi.R). SampleTemplateDataInput.xlsx contains fake data to show how the input table should be constructed.
+
+The machine_learning folder contains the code to run the machine learning models and generate the figures and tables. The data_shells subfolder contains the headers used in each of the input tables. Data are protected under an assurance of confidentiality and cannot be shared publicly. Code should be run in the following order:
+1. 1_format_model_inputs.R to generate the training and test sets
+2. 2_ml_classification_models.R to run all models with 5-fold cross-validation
+3. 3_summarize_results.R to get the averaged results and generated the final tables
+4. 4_generate_final_model.R to make the final model and get the results for the validation set
+5. 5_model_interpretation.R to generate the variable importance and ALE plots
+
 ## Public Domain
 This repository constitutes a work of the United States Government and is not
 subject to domestic copyright protection under 17 USC § 105. This repository is in
